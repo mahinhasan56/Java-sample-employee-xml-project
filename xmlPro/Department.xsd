@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Department">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="dept_id">
+					<xs:simpleType>
+						<xs:restriction base="xs:integer">
+							<xs:minInclusive value="100"></xs:minInclusive>
+							<xs:maxInclusive value="10000"></xs:maxInclusive>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="dept_name">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="15" />
+							<xs:minLength value="6" />
+							<xs:enumeration value="training" />
+						    <xs:enumeration value="management" />
+						    <xs:enumeration value="developement" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="dept_city" type="xs:string" />
+				<xs:element name="dept_start_date" type="xs:date" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

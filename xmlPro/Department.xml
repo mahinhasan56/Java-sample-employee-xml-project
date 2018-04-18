@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Department xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Department.xsd">
+  <dept_id>0</dept_id>
+  <dept_name>training</dept_name>
+  <dept_city>dept_city</dept_city>
+  <dept_start_date>2001-01-01</dept_start_date>
+</Department>

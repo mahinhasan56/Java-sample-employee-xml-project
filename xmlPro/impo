@@ -1,0 +1,80 @@
+		
+       			double m = (y2-y1)/(x2-x1);
+       			
+       		 if(x2 < x1) //x1 must be smaller than x2
+      		  {
+      			  double temp = x1;
+      			  x1 = x2;
+      			  x2 = temp;
+      			  
+      			  temp = y1;
+      			  y1 = y2;
+      			  y2 = temp;
+      		  }
+       		 
+       		gl.glVertex2d(x1/10,y1/10);
+       		 
+       		 if(m==1)
+       		 {
+       			 while(x1 < x2)
+       			 {
+       				 x1 = x1 + 0.01;
+       				 y1 = y1 + 0.01;
+       				 
+       				 gl.glVertex2d(x1/10,y1/10);
+       				 
+       			 }
+       				 
+       		 }
+       		 
+       		 else
+       			 if(m == -1)
+       			 {
+       				 while(x1 < x2)
+       				 {
+       					 x1 = x1 + 0.01;
+       					 y1 = y1 - 0.01;
+       					 
+       					 gl.glVertex2d(x1/10,y1/10);
+       				 }
+       			 }
+       		 
+       			 else
+       				 if(m == 0)
+       				 {
+       					while(x1 < x2)
+          				 {
+          					 x1 = x1 + 0.01;
+          					
+          					 gl.glVertex2d(x1/10,y1/10);
+          				 } 
+       				 }
+       		 /*
+       				 else 
+       					 if(x2 == x1)
+       					 {
+       						 while(y1 < y2)
+       						 {
+       							 y1 = y1 + 0.01;
+       							 
+       							 gl.glVertex2d(x1/10,y1/10);
+       						 }
+       					 }
+       					 */
+       					 
+       					 else
+       					 {
+       						 System.out.println("Invalid Points");
+       					 }
+       			
+       		gl.glVertex2d(x2/10,y2/10);
+       		   
+       		}
+       		sc1.close();
+       		sc.close();
+       	}
+		catch (IOException e) 
+		{	
+		}
+        
+        gl.glEnd();

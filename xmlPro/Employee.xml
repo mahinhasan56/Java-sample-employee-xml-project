@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Emp SYSTEM "Employ.dtd" >
+<?xml-stylesheet type="text/css" href="emp.css"?>
+<Employee>
+<Emp id="1001">
+  <name>x1</name>
+  <salary>12000</salary>
+  <location>Gulsan</location>
+</Emp>
+
+<Emp id="1002">
+  <name>S1</name>
+  <salary>15000</salary>
+  <location>Mohakhali</location>
+</Emp>
+</Employee>

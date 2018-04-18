@@ -1,0 +1,6 @@
+<!ELEMENT Employee (Emp*)>
+<!ELEMENT Emp (name,salary,location)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ATTLIST Emp id (1001|1002|1003) "1001">
